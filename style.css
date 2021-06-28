@@ -1,0 +1,150 @@
+*{
+  margin:0px;
+/*   font-family:monospace; */
+}
+body{
+   /* animation onload */
+  /* animation: onload 0.75s; */
+  animation: 1s ease-out 0s 1 onload;
+}
+/* nav{
+  position:fixed;
+  right:0px;
+  top:0px;
+  left:0px;
+} */
+
+nav,footer{
+  position:fixed;
+  background-color:black;
+}
+nav{
+  right:0px;
+  left:0px;
+}
+nav ul,footer ul{
+  padding:15px;
+  display:flex;
+  justify-content:space-evenly;
+  list-style:none;
+}
+
+nav ul a,footer ul a{
+  text-decoration:none;
+  color:grey;
+}
+
+
+h2{
+  text-align:center;
+}
+#projects{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  grid-template-rows:1fr 1fr;
+  grid-row-gap:40px;
+  height:100vh;  
+  padding-bottom:50px;
+  /* image */
+  background-image: url('images/projects.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+.project-tile{
+  background-color: rgb(29, 47, 53);
+  color: antiquewhite;
+  opacity: 0.9;
+  height:100%;
+  margin:5px;
+  padding:6px;
+  border-radius:15px;
+  text-align:center;  
+ }
+.project-tile:hover{
+  box-shadow: 3px 1px 15px black;
+}
+
+
+footer{
+  width:100%;
+  bottom:0px;
+  left:0px;
+}
+
+.project-tile img{
+  width:70%;
+}
+
+.project-link{
+  text-decoration:none;
+  color:voilet;
+  font-weight:bold;
+}
+#welcome-section{
+  text-align:center;
+  background-color:hsl(260,100%,50%);
+  height:100vh;
+}
+#welcome-section h1{
+  padding:80px 0px 0px 0px;
+}
+
+#about{
+  text-align:center;
+  height:60vh;
+  background-color: hsl(260,50%,50%);  
+  display:table;
+  width:100%;
+}
+#about p{
+  vertical-align: middle;
+  display: table-cell
+}
+
+#welcome-section{
+  background-image: url('images/welcome.jpg');
+  min-height: 50px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+/* onload transition */
+@keyframes onload{
+  0%{
+    opacity: 0;
+    /* transform: rotateX(-10deg); */
+    transform: rotateX(-100%);
+  }
+  100%{
+    opacity: 1;
+    /* transform: rotateX(0); */
+    transform: rotateX(0);
+  }
+}
+
+@media (max-width:400px){
+  #projects{
+    grid-template-columns:1fr;
+    height:100%;
+    padding:30px;
+  }
+  nav ul, footer ul{
+    text-align:center;
+    display:block;
+  }
+  footer{
+    position:relative;
+  }
+  #welcome-section{
+    padding-top:50px;
+  }
+}
+
+
+
