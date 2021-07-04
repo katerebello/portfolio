@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <title>Kate Rebello</title>
 </head>
 
@@ -14,19 +16,47 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"
         integrity="undefined" crossorigin="anonymous">
     <div>
-        <nav id="navbar">
-            <ul class="list">
-                <li><a href="#welcome-section">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
-            </ul>
-        </nav>
-        <section id="welcome-section">
-            <h1>Hi, I'm Kate Rebello</h1>
-            <h3>An aspiring Software Developer</h3>
-        </section>
-        <div>
+        <!-- intro -->
+        <div class="container">
+            <section id="welcome-section" style="width: 100%;">
+                <h1>Hi, I'm Kate Rebello</h1>
+                <h3>An aspiring Software Developer</h3>
+            </section>
+            <nav id="navbar" style="display: none;">
+                <ul class="list">
+                    <li><a href="#welcome-section"><i class="uil uil-estate"></i> Home</a></li>
+                    <li><a href="#about"><i class="uil uil-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="uil uil-abacus"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="uil uil-laptop"></i> Projects</a></li>
+                    <li><a href="#contact-me"><i class="uil uil-phone-volume"></i> Contact Me</a></li>
+                </ul>
+            </nav>
+            <button class="nav-button" onclick="displaynav()"><img
+                    src="https://img.icons8.com/ios/25/000000/menu--v3.png" /></button>
+        </div>
+        <!-- about-me -->
+        <div class="about-title">
+            <h2>AboutMe</h2>
+            -----Who I am----
+        </div>
+        <div class="main-about">
+            <div id="profile-img">
+                <img src="images/profile-img.jpg" alt="">
+            </div>
+            <div id="about-me">
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque
+                    autem excepturi eaque,
+                    sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus accusamus alias fuga nihil
+                    dolorum quae. Explicabo
+                    illo unde, odio consequatur ipsam possimus veritatis, placeat, ab molestiae velit inventore
+                    exercitationem consequuntur
+                    blanditiis omnis beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum
+                    non.</div>
+                <button>Download CV</button>
+            </div>
+        </div>
+        <div class="main-projects">
             <h2 class="con">My projects</h2>
             <section id="projects">
                 <a target="_blank" href="https://github.com/katerebello/laravel_project" class="project-link">
@@ -82,12 +112,31 @@
                     </div>
                 </a>
             </section>
-            <section id="about">
-                <p>
-                    A Computer engineering student.An Aspiring software Developer,interested in software development
-                    technologies.Always ready to learn new things.
-                </p>
-            </section>
+        </div>
+
+        <!-- my-skills -->
+        <div class="main-skills">
+            <h2>My skills</h2>
+            ----what I know---
+            <div class="skills-section">
+                <div class="skills-div">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, ratione error est recusandae
+                    consequatur, iusto
+                    illum deleniti quidem impedit, quos quaerat quis minima sequi. Cupiditate recusandae laudantium
+                    esse, harum animi
+                    aspernatur quisquam et delectus ipsum quam alias quaerat? Quasi hic quidem illum. Ad delectus natus
+                    aut hic explicabo
+                    minus quod.
+                </div>
+                <div class="skills-div">
+                    <div class="skills html">80%</div>
+                    <div class="skills css">70%</div>
+                    <div class="skills js">50%</div>
+                    <div class="skills Python">80%</div>
+                    <div class="skills Java">50%</div>
+                    <div class="skills Cpp">80%</div>
+                </div>
+            </div>
         </div>
 
         <footer id="contact-me">
