@@ -13,7 +13,7 @@ const projects =[
     },
     {
         title: "Music application",
-        image: "",
+        image: "images/capture.jpg",
         link: "",
         technologies: [""],
     },
@@ -43,9 +43,7 @@ document.getElementById("projects").innerHTML = `
          ${projects.map(function(project){
             return `
             <a target="_blank" href=${projects[0].link} class="project-link">
-                <div class="project-tile">
-                    <img src="https://media.istockphoto.com/vectors/programming-code-application-window-vector-id1124838925?k=6&m=1124838925&s=612x612&w=0&h=TbuwIMLPlZxN9jbuTcJanRwX33tkgNF7_PiIPvpPVm4="
-                        alt="">
+                <div style="background-image: url(${project.image});color: red;" class="project-tile">
                     <div class="project-info">
                         <h3>${project.title}</h3>
                         <p>Laravel-php framework</p>
@@ -58,8 +56,8 @@ document.getElementById("projects").innerHTML = `
 `
 
 const languages =["Python","PHP","Java","C++","C","Javascript","Dart","Markdown"];
-const frameworks = ["Django","Laravel","Flutter"];
-const libraries = ["Bootstrap","Jquery"];
+const frameworks = ["Django","Laravel","Flutter","Bootstrap"];
+const libraries = ["Jquery"];
 const technologies = ["Github","Git"];
 
 document.getElementById("languages").innerHTML = `
@@ -91,6 +89,5 @@ document.getElementById("technologies").innerHTML = `
     }).join('')}
 
 `
-
 
 
