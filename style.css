@@ -25,7 +25,7 @@
   height: 10px;
   /* width: 70px; */
   background-color: lightcoral;
-  background-image: linear-gradient(to right,#020024,#090979,#00d4ff);
+  background-image: linear-gradient(to right,#001724,#4d0954,#c11ce6);
   position: fixed;
   top: 0px;
 }
@@ -61,7 +61,7 @@ a{
   /* padding: 5px 20px 5px 20px; */
   background-image: linear-gradient(to right, var(--color2),var(--color3));
   border: 0px;
-  margin-top: 30px;
+  margin-top: 70px;
   font-size: var(--desktext3);
 }
 
@@ -331,7 +331,7 @@ footer img{
   }
 }
 
-
+/* mobile screens  */
 @media (max-width:600px){
   .titles{
   font-size: var(--mobiletext2);
@@ -428,6 +428,8 @@ footer img{
     display: none;
   }
 }
+
+/* desktop screens  */
 @media (min-width:599px){
   /* #navbar{
   position: fixed;
