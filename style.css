@@ -2,7 +2,7 @@
 
 :root{
   --colo1: #AAD8D3;
-  --color2: #00ADB5;
+  --color2: #235558;
   --color3: #393E46;
   --mobiletext1: 50px;
   --mobiletext2: 25px;
@@ -20,6 +20,15 @@
 /* html{
   overflow-x: hidden;
 } */
+
+#progress-bar{
+  height: 10px;
+  /* width: 70px; */
+  background-color: lightcoral;
+  background-image: linear-gradient(to right,#020024,#090979,#00d4ff);
+  position: fixed;
+  top: 0px;
+}
 
 a{
   text-decoration: none;
@@ -76,19 +85,24 @@ a{
 #line3{
   font-size: var(--desktext3);
 }
-#social{
+
+#social ul{
   position: absolute;
-  right: 5px;
-  top: 100px;
-}
+  top: 150px;
+  right: 10px;
+  display: block;
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+  }
 #social li{
-  padding: 30px;
+  padding: 30px 20px 30px 12px;
   list-style: none;
   font-size: 20px;
 }
 #social i{
   color: grey;
 }
+
 /* end of welcome-section  */
 
 /* about me starts  */
@@ -149,20 +163,7 @@ a{
   margin: 10px;
 }
 /* navbar styles  */
-#navbar{
-  background-color: rgb(11, 51, 51);
-}
-#navbar ul{
-  display: flex;
-  height: 50px;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-}
-#navbar a{
-  color: aliceblue;
 
-}
 /* #navbar{
   position: fixed;
   top: 0px;
@@ -331,7 +332,6 @@ footer img{
 }
 
 
-
 @media (max-width:600px){
   .titles{
   font-size: var(--mobiletext2);
@@ -339,6 +339,7 @@ footer img{
 .sub-titles{
   font-size: var(--mobiletext3);
 }
+
   #line1{
   font-size: var(--mobiletext2);
   font-weight: 600;
@@ -356,13 +357,23 @@ footer img{
   #welcome button{
     font-size: var(--mobiletext3);
   }
+  #social ul{
+  position: absolute;
+  top: 300px;
+  left: -20px;
+  /* justify-content: center; */
+  /* top: -30px; */
+  justify-content: center;
+  display: flex;
+}
+  
   #projects{
     grid-template-columns:1fr;
     height:100%;
     padding:30px;
   }
 
-  nav ul, footer ul{
+ footer ul{
     text-align:center;
     display:block;
   }
@@ -395,19 +406,71 @@ footer img{
   #welcome-1{
     text-align: center;
   }
-  
-  #social{
-    position: relative;
-    top: -200px;
-    /* left: 35px; */
-    right: 0px;
+  #line1{
+    color: blue;
   }
-  #social ul{
-    display: flex;
+  #navbar{
+    position: absolute;
+    top: 0px;
+    background-color:darkblue;
+    height: 100%;
+    color: white;
+
+    z-index: 2;
+  }
+  #navbar ul{
+    list-style: none;
+  }
+  #navbar li{
+    padding: 30px;
   }
   #navbar{
     display: none;
   }
+}
+@media (min-width:599px){
+  /* #navbar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+#navbar ul{
+  display: flex;
+  height: 50px;
+  align-items: center;
+  list-style: none;
+} */
+#navbar a{
+  color: aliceblue;
+
+}
+  #line1{
+    color: rgb(63, 62, 60);
+  }
+/* #navbar{
+  position: relative;
+  z-index: 4;
+} */
+#navbar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: rgb(49, 66, 82);
+}
+#navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 20px;
+}
+
+#line2:hover{
+  color: #AAD8D3;
+}
+
 }
 
 
