@@ -45,8 +45,8 @@ document.getElementById("projects").innerHTML = `
             <a target="_blank" href=${projects[0].link} class="project-link">
                 <div style="background-image: url(${project.image});color: red;" class="project-tile">
                     <div class="project-info">
-                        <h3>${project.title}</h3>
-                        <p>Laravel-php framework</p>
+                        <p class="project-title">${project.title}</p>
+                        <p class="project-desc">Laravel-php framework</p>
                     </div>
                     <i class="uil uil-github"></i>
                 </div>

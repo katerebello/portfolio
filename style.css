@@ -4,6 +4,13 @@
   --colo1: #AAD8D3;
   --color2: #00ADB5;
   --color3: #393E46;
+  --mobiletext1: 50px;
+  --mobiletext2: 25px;
+  --mobiletext3: 15px;
+  --desktext1: 80px;
+  --desktext2p2: 30px;
+  --desktext2: 40px;
+  --desktext3: 20px;
 }
 *{
   margin:0px;
@@ -16,6 +23,17 @@
 
 a{
   text-decoration: none;
+}
+
+.titles{
+  font-size: var(--desktext2);
+  text-align: center;
+}
+.sub-titles{
+  color: var(--primarycolor);
+  text-align: center;
+  font-size: var(--desktext3);
+  font-weight: 600;
 }
 /* welcome-section */
 #welcome{
@@ -34,6 +52,8 @@ a{
   /* padding: 5px 20px 5px 20px; */
   background-image: linear-gradient(to right, var(--color2),var(--color3));
   border: 0px;
+  margin-top: 30px;
+  font-size: var(--desktext3);
 }
 
 #welcome-1{
@@ -43,18 +63,18 @@ a{
 }  
 
 #line1{
-  font-size: 30px;
+  font-size: var(--desktext2);
   font-weight: 600;
 }
 
 #line2{
-  font-size: 50px;
+  font-size: var(--desktext1);
   font-weight: bold;
   animation: toright 3s;
 }
 
 #line3{
-  font-size: 20px;
+  font-size: var(--desktext3);
 }
 #social{
   position: absolute;
@@ -121,20 +141,6 @@ a{
   background-image: linear-gradient(to right,var(--primarycolor), white);
 }
 /* about me ends  */
-
-
-.titles{
-  font-size: 5vh;
-  font-weight: 600;
-  text-align: center;
-}
-.sub-titles{
-  color: var(--primarycolor);
-  text-align: center;
-  font-size: 20px;
-  font-weight: 600;
-}
-
 .nav-button{
   position: fixed;
   top: 0px;
@@ -231,7 +237,12 @@ a{
   font-weight:bold;
 }
 
-
+ .project-title{
+    font-size: var(--desktext2p1);
+  }
+  .project-desc{
+    font-size: var(--desktext3);
+  }
 /* hover effect on project-tile */
 .project-tile:hover{
   font-size: larger;
@@ -322,16 +333,43 @@ footer img{
 
 
 @media (max-width:600px){
+  .titles{
+  font-size: var(--mobiletext2);
+}
+.sub-titles{
+  font-size: var(--mobiletext3);
+}
+  #line1{
+  font-size: var(--mobiletext2);
+  font-weight: 600;
+}
+
+#line2{
+  font-size: var(--mobiletext1);
+  font-weight: bold;
+  animation: toright 3s;
+}
+
+#line3{
+  font-size: var(--mobiletext3);
+}
+  #welcome button{
+    font-size: var(--mobiletext3);
+  }
   #projects{
     grid-template-columns:1fr;
     height:100%;
     padding:30px;
   }
+
   nav ul, footer ul{
     text-align:center;
     display:block;
   }
   /* about-me  starts*/
+  #about-me{
+  font-size: var(--mobiletext3);
+  }
   #about-me-div{
     display: block;
   }
