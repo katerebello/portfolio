@@ -328,11 +328,10 @@ footer img{
   font-size: var(--mobiletext2p2);
   }
   #social ul{
-  position: relative;
   bottom: 300px;
   justify-content: space-evenly;
   display: flex;
-}
+} 
   
   #projects{
     grid-template-columns:1fr;
@@ -416,9 +415,7 @@ footer img{
   top: 150px;
   right: 10px;
   display: block;
-  /* justify-content: center; */
-  /* justify-content: space-evenly; */
-  }
+}
 #navbar{
   position: fixed;
   top: 0px;
