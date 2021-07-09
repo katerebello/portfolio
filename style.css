@@ -60,9 +60,12 @@ a{
 #welcome button{
   /* padding: 5px 20px 5px 20px; */
   background-image: linear-gradient(to right, var(--color2),var(--color3));
-  border: 0px;
+  border: 1px solid blueviolet;
   margin-top: 70px;
   font-size: var(--desktext3);
+}
+#welcome button:hover{
+  box-shadow: 2px 5px grey;
 }
 
 #welcome-1{
@@ -97,7 +100,7 @@ a{
 #social li{
   padding: 30px 20px 30px 12px;
   list-style: none;
-  font-size: 20px;
+  font-size: var(--desktext3);
 }
 #social i{
   color: grey;
@@ -273,19 +276,30 @@ a{
 }
 
 /* footer styles  */
-
+footer{
+  background-color: rgba(20,20,40,0.4);
+  text-align: center;
+}
+footer li{
+  /* padding: 20px; */
+  background-color: black;
+  padding: 15px 20px 15px 20px;
+  margin: 5px;
+  border-radius: 50%;
+}
 footer ul{
+  width: 50%;
+  margin: auto;
   display: flex;
   list-style:none;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
-#contact-1{
-   position: relative;
-  bottom: -80px;
-}
+/* #contact-1{
+   position: absolute;
+  bottom: 0px;
+} */
 footer p{
   text-align: center;
- 
 }
 
 nav ul a,footer ul a{
@@ -295,18 +309,23 @@ nav ul a,footer ul a{
 
 footer{
   position: relative;
-  z-index: 3;
   /* background-color: rgb(4, 17, 17); */
 }
 footer a{
   color: #393E46;
-  font-size: 30px;
+  /* font-size: 30px; */
 }
 footer img{
   position: absolute;
-  bottom: -100px;
+  bottom: 0px;
+  /* right: 0px;
+  left: 0px; */
   width: 100%;
-  z-index: -1;
+  /* z-index: -1; */
+}
+#name{
+  color: #061a5f;
+  font-weight: bold;
 }
 
 #up-arrow{
@@ -330,6 +349,7 @@ footer img{
     transform: translateX(-1px);
   }
 }
+
 
 /* mobile screens  */
 @media (max-width:600px){
@@ -356,13 +376,15 @@ footer img{
 }
   #welcome button{
     font-size: var(--mobiletext3);
+    margin-top: 20px;
+  }
+  #social li{
+  font-size: var(--mobiletext2);
   }
   #social ul{
   position: absolute;
-  top: 300px;
+  top: 280px;
   left: -20px;
-  /* justify-content: center; */
-  /* top: -30px; */
   justify-content: center;
   display: flex;
 }
@@ -373,10 +395,6 @@ footer img{
     padding:30px;
   }
 
- footer ul{
-    text-align:center;
-    display:block;
-  }
   /* about-me  starts*/
   #about-me{
   font-size: var(--mobiletext3);
@@ -407,7 +425,7 @@ footer img{
     text-align: center;
   }
   #line1{
-    color: blue;
+    color: rgb(126, 126, 180);
   }
   #navbar{
     position: absolute;
@@ -466,7 +484,13 @@ footer img{
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  padding: 20px;
+  padding: 15px;
+}
+#navbar li{
+  padding: 10px 15px;
+}
+#navbar li:hover{
+  border: 1px solid rgb(111, 54, 165);
 }
 
 #line2:hover{
