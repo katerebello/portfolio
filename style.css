@@ -339,7 +339,7 @@ footer img{
 
 
 /* mobile screens  */
-@media (max-width:600px){
+@media screen and  (max-width:600px){
   .titles{
   font-size: var(--mobiletext2);
 }
@@ -435,7 +435,7 @@ footer img{
 }
 
 /* desktop screens  */
-@media (min-width:599px){
+@media screen and (min-width:599px){
 #navbar a{
   color: aliceblue;
 
