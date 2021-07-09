@@ -15,6 +15,14 @@ window.addEventListener("scroll",()=>{
 // page scroll indicator end 
 
 
+// display navbar on mobile when icon clicked 
+const navbutton = document.querySelector("#navdisplay");
+const navbar = document.querySelector("#navbar");
+navbutton.addEventListener("click",()=>{
+    navbar.style.display = "block";
+    navbutton.style.display="none";
+});
+
 const projects =[
     {
         title: "Instgram clone",

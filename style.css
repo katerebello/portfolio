@@ -7,7 +7,7 @@
   --mobiletext1: 50px;
   --mobiletext2: 25px;
   --mobiletext3: 15px;
-  --desktext1: 100px;
+  --desktext1: 80px;
   --desktext2p2: 30px;
   --desktext2: 40px;
   --desktext3: 25px;
@@ -32,6 +32,9 @@ a{
 }
 .titles{
   text-align: center;
+  color: rgb(168, 168, 168);
+  /* display: inline-block; */
+
 }
 .sub-titles{
   text-align: center;
@@ -52,15 +55,17 @@ a{
 }
 #welcome button{
   padding: 5px 20px 5px 20px;
-  background-image: linear-gradient(to right, var(--color2),var(--color3));
-  border: 1px solid blueviolet;
+  background-image: linear-gradient(to right, rgb(61, 49, 94),white);
+  border: 0px;
   margin-top: 30px;
   font-size: var(--desktext3);
 }
 #welcome button:hover{
-  box-shadow: 2px 5px grey;
+  box-shadow: 4px 6px grey;
 }
-
+#line2{
+  color: #8771b1fa;
+}
 #welcome-1{
   padding: 100px 50px;
   width: 100%;
@@ -140,6 +145,10 @@ a{
 #main-projects{
   padding: 20px;
   color: aliceblue;
+  /* background-image: url('images/design.jpg'); */
+  /* background-size: cover; */
+  background-blend-mode:soft-light;
+  /* background-attachment: fixed; */
 }
 #projects{
   display:grid;
@@ -151,6 +160,7 @@ a{
   background-position: center;
   background-size: cover;
   padding: 20px 30px 20px 0px;
+  /* background-color: #4d0954; */
 }
 
 .project-tile{
@@ -236,8 +246,7 @@ footer{
 }
 
 #name{
-  color: #061a5f;
-  font-weight: bold;
+  color: #f7f9ff;
 }
 
 #up-arrow{
@@ -268,6 +277,13 @@ footer p{
 
 /* mobile screens  */
 @media screen and (max-width:1025px){
+  #navdisplay{
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    font-size: var(--mobiletext1);
+    color: aliceblue;
+  }
   .titles{
     font-size: var(--mobiletext2);
     font-weight: bold;
@@ -337,27 +353,32 @@ footer p{
   #welcome-1{
     text-align: center;
   }
-  #line1{
-    color: rgb(126, 126, 180);
-  }
   #navbar{
+    padding-top: 50px;
     position: absolute;
     top: 0px;
-    background-color:darkblue;
+    right:0px;
+    background-color:rgba(0, 0, 22, 0.685);
     height: 100%;
     color: white;
-
     z-index: 2;
   }
+  #navbar{
+    display: none;
+  }
+  #navbar a{
+  color: #AAD8D3;
+}
+
   #navbar ul{
     list-style: none;
   }
   #navbar li{
     padding: 30px;
   }
-  #navbar{
+  /* #navbar{
     display: none;
-  }
+  } */
   #contact-1 p{
     font-size: var(--desktext3);
     color: yellowgreen;
@@ -422,9 +443,6 @@ footer p{
   border: 1px solid rgb(111, 54, 165);
 }
 
-#line2:hover{
-  color: #AAD8D3;
-}
 #contact-1 p{
   font-size: var(--desktext3);
 }
