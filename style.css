@@ -17,9 +17,6 @@
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-/* html{
-  overflow-x: hidden;
-} */
 
 #progress-bar{
   height: 10px;
@@ -61,7 +58,7 @@ a{
   /* padding: 5px 20px 5px 20px; */
   background-image: linear-gradient(to right, var(--color2),var(--color3));
   border: 1px solid blueviolet;
-  margin-top: 70px;
+  /* margin-top: 70px; */
   font-size: var(--desktext3);
 }
 #welcome button:hover{
@@ -74,16 +71,6 @@ a{
   display: block;
 }  
 
-
-
-#social ul{
-  position: absolute;
-  top: 150px;
-  right: 10px;
-  display: block;
-  /* justify-content: center; */
-  /* justify-content: space-evenly; */
-  }
 #social li{
   padding: 30px 20px 30px 12px;
   list-style: none;
@@ -152,29 +139,6 @@ a{
   opacity: 0.5;
   margin: 10px;
 }
-/* navbar styles  */
-
-/* #navbar{
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-}
-#navbar ul{
-  display: flex;
-  align-items: center;
-  background-color: aquamarine;
-  list-style: none;
-}
-#navbar a{
-  text-decoration: none;
-}
-#navbar ul li{
-  padding: 30px;
-  position: relative;
-  left: 40%;
-} */
-/* navbar ends  */
 
 /* projects section starts  */
 #main-projects{
@@ -213,11 +177,6 @@ a{
   font-weight: 100;
   padding-top: 30px;
 }
-
-/* .project-tile:hover{
-  box-shadow: 3px 1px 15px black;
-} */
-
 
 .project-tile img{
   width:70%;
@@ -363,16 +322,15 @@ footer img{
 }
   #welcome button{
     font-size: var(--mobiletext3);
-    margin-top: 40px;
+    margin-top: 30px;
   }
   #social li{
-  font-size: var(--mobiletext2);
+  font-size: var(--mobiletext2p2);
   }
   #social ul{
-  position: absolute;
-  top: 280px;
-  left: -20px;
-  justify-content: center;
+  position: relative;
+  bottom: 300px;
+  justify-content: space-evenly;
   display: flex;
 }
   
@@ -403,7 +361,6 @@ footer img{
     width: 100%;
     padding: 5px 0px 0px 0px;
   }
-
   /* about me ends  */
   #welcome{
     display: block;
@@ -438,7 +395,6 @@ footer img{
 @media screen and (min-width:599px){
 #navbar a{
   color: aliceblue;
-
 }
  #line1{
   font-size: var(--desktext2);
@@ -454,6 +410,15 @@ footer img{
 #line3{
   font-size: var(--desktext3);
 }
+
+#social ul{
+  position: absolute;
+  top: 150px;
+  right: 10px;
+  display: block;
+  /* justify-content: center; */
+  /* justify-content: space-evenly; */
+  }
 #navbar{
   position: fixed;
   top: 0px;
