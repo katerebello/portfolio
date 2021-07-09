@@ -74,20 +74,7 @@ a{
   display: block;
 }  
 
-#line1{
-  font-size: var(--desktext2);
-  font-weight: 600;
-}
 
-#line2{
-  font-size: var(--desktext1);
-  font-weight: bold;
-  animation: toright 3s;
-}
-
-#line3{
-  font-size: var(--desktext3);
-}
 
 #social ul{
   position: absolute;
@@ -292,7 +279,7 @@ footer ul{
   margin: auto;
   display: flex;
   list-style:none;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 /* #contact-1{
    position: absolute;
@@ -376,7 +363,7 @@ footer img{
 }
   #welcome button{
     font-size: var(--mobiletext3);
-    margin-top: 20px;
+    margin-top: 40px;
   }
   #social li{
   font-size: var(--mobiletext2);
@@ -449,29 +436,24 @@ footer img{
 
 /* desktop screens  */
 @media (min-width:599px){
-  /* #navbar{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-}
-#navbar ul{
-  display: flex;
-  height: 50px;
-  align-items: center;
-  list-style: none;
-} */
 #navbar a{
   color: aliceblue;
 
 }
-  #line1{
-    color: rgb(63, 62, 60);
-  }
-/* #navbar{
-  position: relative;
-  z-index: 4;
-} */
+ #line1{
+  font-size: var(--desktext2);
+  font-weight: 600;
+}
+
+#line2{
+  font-size: var(--desktext1);
+  font-weight: bold;
+  animation: toright 3s;
+}
+
+#line3{
+  font-size: var(--desktext3);
+}
 #navbar{
   position: fixed;
   top: 0px;
