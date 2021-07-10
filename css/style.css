@@ -7,6 +7,7 @@
   --color4: rgb(15, 170, 162);
   --mobiletext1: 50px;
   --mobiletext2: 25px;
+  --mobiletext2p2: 20px;
   --mobiletext3: 15px;
   --desktext1: 80px;
   --desktext2p2: 30px;
@@ -55,7 +56,16 @@ a{
 .sub-titles{
   text-align: center;
 }
-
+#greet{
+  color: var(--color4);
+  padding: 30px 0px;
+}
+.navbar{
+  text-transform: uppercase;
+}
+.navbar a{
+  color: aliceblue;
+}
 /* welcome-section */
 #welcome{
   background-image: url('../images/Endless-Constellation.svg');
@@ -212,13 +222,15 @@ a{
   /* color:voilet; */
   font-weight:bold;
 }
-
+button{
+  cursor: pointer;
+}
 #main-projects button{
   padding: 10px 20px;
   border-radius: 20px;
   border: 0px;
   color: #dfa6e6;
-  background-image: linear-gradient(to right ,black,grey);
+  background-color: var(--color2);
 }
 
  .project-title{
@@ -313,6 +325,29 @@ footer p{
     font-size: var(--mobiletext1);
     color: aliceblue;
   }
+   .navbar{
+    padding-top: 50px;
+    position: fixed;
+    top: 0px;
+    right:0px;
+    bottom: 0px;
+    background-color:rgba(0, 0, 22, 0.685);
+    height: 100%;
+    /* left: 0px; */
+    z-index: 2;
+    /* text-align: center; */
+  }
+  .navbardisplay{
+    display: none;
+  }
+
+  .navbar ul{
+    list-style: none;
+  }
+  .navbar li{
+    padding: 30px;
+  }
+  
   .titles{
     font-size: var(--mobiletext2);
     font-weight: bold;
@@ -334,6 +369,9 @@ footer p{
 
 #line3{
   font-size: var(--mobiletext3);
+}
+#greet{
+  font-size: var(--mobiletext2p2);
 }
   #welcome button{
     font-size: var(--mobiletext3);
@@ -382,30 +420,7 @@ footer p{
   #welcome-1{
     text-align: center;
   }
-  .navbar{
-    padding-top: 50px;
-    position: fixed;
-    top: 0px;
-    right:0px;
-    background-color:rgba(0, 0, 22, 0.685);
-    height: 100%;
-    color: white;
-    z-index: 2;
-  }
-  .navbardisplay{
-    display: none;
-  }
-  .navbar a{
-  color: #AAD8D3;
-}
-
-  .navbar ul{
-    list-style: none;
-  }
-  .navbar li{
-    padding: 30px;
-  }
-  
+ 
   #links a {
   border-radius: var(--mobiletext3);
 }
@@ -420,9 +435,7 @@ footer p{
 
 /* desktop screens  */
 @media screen and (min-width:1025px){
-.navbar a{
-  color: aliceblue;
-}
+
  #line1{
   font-size: var(--desktext2);
   font-weight: 600;
@@ -435,6 +448,9 @@ footer p{
 }
 
 #line3{
+  font-size: var(--desktext3);
+}
+#greet{
   font-size: var(--desktext3);
 }
 
@@ -457,16 +473,21 @@ footer p{
 .navbar{
   position: fixed;
   top: 0px;
+  margin: 15px;
   left: 0px;
   right: 0px;
-  background-color: rgb(49, 66, 82);
+  background-color: rgba(57, 90, 121, 0.568);
+  border-radius: 10px;
+}
+#navdisplay{
+  display: none;
 }
 .navbar ul{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
-  padding: 15px;
+  padding: 10px;
 }
 .navbar li{
   padding: 10px 15px;

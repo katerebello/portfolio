@@ -1,11 +1,3 @@
-// display navbar on mobile when icon clicked 
-// const navbutton = document.querySelector("#navdisplay");
-// const navbar = document.querySelector("#navbar");
-// navbutton.addEventListener("click",()=>{
-//     navbar.style.display = "block";
-//     navbutton.style.display="none";
-// });
-
 const projects =[
     {
         title: "Instgram clone",
@@ -48,13 +40,32 @@ document.getElementById("projects").innerHTML = `
 // onscroll effect 
 const bodyy = document.querySelector("body");
 window.addEventListener("scroll",()=>{
-    console.log('Yay');
     bodyy.style.animation = "1s ease-out 0s 1 load";
 });
 
-// navbar toogle 
+
+// navbar toogle  on mobile screens starts
 const navbutton = document.querySelector("#navdisplay");
 const navbar = document.querySelector(".navbar");
-navbutton.addEventListener("click",()=>{
+const navicon = document.querySelector("#navicon");
+navbutton.addEventListener("click",function(){
     navbar.classList.toggle("navbardisplay");
+    navicon.classList.toggle("uil uil-bars");
 });
+// navbar toogle ends
+
+
+// greet in the welcome 
+const greet = document.querySelector("#greet");
+var weekday = new Array(7);
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+d = new Date();
+greet.innerHTML = `<i>Hope You are having a great ${weekday[d.getDay()]} 
+&#128521 </i>
+`;
