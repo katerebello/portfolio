@@ -4,7 +4,7 @@
   --color1: #AAD8D3;
   --color2: #120c14;
   --color3: #393E46;
-  --color4: rgb(15, 170, 162);
+  --color4: rgb(116, 150, 148);
   --mobiletext1: 50px;
   --mobiletext2: 25px;
   --mobiletext2p2: 20px;
@@ -111,10 +111,10 @@ a{
 
 /* about me starts  */
 #about-me {
-  background-color: var(--color2);
+  /* background-color: var(--color2); */
   padding: 20px;
   box-shadow: 5px 7px 7px 8px rgba(122, 96, 96, 0.363);
-  color: var(--color1);
+  color: var(--color2);
   margin: 30px 40px;
 }
 #about-me-div{
@@ -125,7 +125,8 @@ a{
   width: 20%;
 }
 #about-me-div1 img{
-  width: 100%;
+  width: 90%;
+  height: 90%;
 }
 #about-me-div2{
   width: 30%;
@@ -177,8 +178,13 @@ a{
   /* background-image: url('images/design.jpg'); */
   /* background-size: cover; */
   text-align: center;
-  background-blend-mode:soft-light;
   /* background-attachment: fixed; */
+}
+.project-icons{
+  font-size:var(--desktext2p2);
+  color: var(--color1);
+  position: relative;
+  padding: 50px;
 }
 #projects{
   display:grid;
@@ -194,7 +200,7 @@ a{
 }
 
 .project-tile{
-  background-color: rgb(29, 47, 53);
+  background-color: var(--color2);
   background-image: url(images/bgimg.jpg);
   /* background-color: rgba(42, 71, 71,0.2); */
   background-blend-mode:overlay;
@@ -333,9 +339,7 @@ footer p{
     bottom: 0px;
     background-color:rgba(0, 0, 22, 0.685);
     height: 100%;
-    /* left: 0px; */
     z-index: 2;
-    /* text-align: center; */
   }
   .navbardisplay{
     display: none;
@@ -473,11 +477,11 @@ footer p{
 .navbar{
   position: fixed;
   top: 0px;
-  margin: 15px;
+  /* margin: 15px; */
   left: 0px;
   right: 0px;
-  background-color: rgba(57, 90, 121, 0.568);
-  border-radius: 10px;
+  background-color: rgb(0, 1, 2);
+  /* border-radius: 10px; */
 }
 #navdisplay{
   display: none;

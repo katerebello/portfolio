@@ -17,11 +17,12 @@ const projects =[
         link: "",
         technologies: [""],
     },
+    
 
 ];
 
 document.getElementById("projects").innerHTML = `
-         ${projects.map(function(project){
+        ${projects.map(function(project){
             return `
             <a target="_blank" href=${projects[0].link} class="project-link">
                 <div style="background-image: url(${project.image});color: red;" class="project-tile">
@@ -29,11 +30,14 @@ document.getElementById("projects").innerHTML = `
                         <p class="project-title">${project.title}</p>
                         <p class="project-desc">Laravel-php framework</p>
                     </div>
-                    <i class="uil uil-github"></i>
+                    <div class="project-icons">
+                        <button>Live Demo<i class="uil uil-external-link-alt"></i></button>
+                        <i class="uil uil-github "></i>
+                    </div>
                 </div>
             </a>
             `
-         }).join('')}  
+        }).join('')}  
 `
 
 
