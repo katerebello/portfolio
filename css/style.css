@@ -307,8 +307,9 @@ footer p{
 @media screen and (max-width:1025px){
   #navdisplay{
     position: fixed;
-    top: 10px;
-    right: 20px;
+    z-index: 3;
+    top: 0px;
+    right: 10px;
     font-size: var(--mobiletext1);
     color: aliceblue;
   }
@@ -381,7 +382,7 @@ footer p{
   #welcome-1{
     text-align: center;
   }
-  #navbar{
+  .navbar{
     padding-top: 50px;
     position: fixed;
     top: 0px;
@@ -391,17 +392,17 @@ footer p{
     color: white;
     z-index: 2;
   }
-  #navbar{
+  .navbardisplay{
     display: none;
   }
-  #navbar a{
+  .navbar a{
   color: #AAD8D3;
 }
 
-  #navbar ul{
+  .navbar ul{
     list-style: none;
   }
-  #navbar li{
+  .navbar li{
     padding: 30px;
   }
   
@@ -419,7 +420,7 @@ footer p{
 
 /* desktop screens  */
 @media screen and (min-width:1025px){
-#navbar a{
+.navbar a{
   color: aliceblue;
 }
  #line1{
@@ -453,24 +454,24 @@ footer p{
   right: 10px;
   display: block;
 }
-#navbar{
+.navbar{
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
   background-color: rgb(49, 66, 82);
 }
-#navbar ul{
+.navbar ul{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   list-style: none;
   padding: 15px;
 }
-#navbar li{
+.navbar li{
   padding: 10px 15px;
 }
-#navbar li:hover{
+.navbar li:hover{
   border: 1px solid rgb(111, 54, 165);
 }
 #contact-1 p{
