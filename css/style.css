@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&family=Poppins:wght@300;600;900&display=swap');
 
 :root{
-  --color1: #AAD8D3;
   --color2: #120c14;
   --color3: #393E46;
   --color4: rgb(116, 150, 148);
@@ -38,7 +37,6 @@ body{
 
 #progress-bar{
   height: 10px;
-  background-color: lightcoral;
   background-image: linear-gradient(to right,#001724,#4d0954,#c11ce6);
   position: fixed;
   top: 0px;
@@ -49,7 +47,7 @@ a{
 }
 .titles{
   text-align: center;
-  color: rgb(168, 168, 168);
+  color: var(--color3);
   /* display: inline-block; */
 
 }
@@ -64,13 +62,23 @@ a{
   text-transform: uppercase;
 }
 .navbar a{
-  color: aliceblue;
+  color: var(--color1);
+}
+.navbar li:nth-child(1){
+  position: fixed;
+  top: 3px;
+  left: 5px;
+  color: var(--color4);
+  font-size: var(--desktext3);
+  font-weight: bold;
 }
 /* welcome-section */
 #welcome{
-  background-image: url('../images/Endless-Constellation.svg');
-  border: 1px solid black;
-  color: #AAD8D3;
+  /* background-image: url('../images/Endless-Constellation.svg'); */
+  background-image: url('../images/Subtle-Prism.svg');
+  background-size: cover;
+  /* border: 1px solid black; */
+  color: var(--color4);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -90,7 +98,8 @@ a{
   box-shadow: 4px 6px grey;
 }
 #line2{
-  color: #8771b1fa;
+  /* color: #8771b1fa; */
+  color: #001724;
 }
 #welcome-1{
   padding: 100px 50px;
@@ -175,8 +184,9 @@ a{
 #main-projects{
   padding: 20px;
   color: aliceblue;
-  /* background-image: url('images/design.jpg'); */
-  /* background-size: cover; */
+  background-image: url('../images/Flat-Mountains.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
   /* background-attachment: fixed; */
 }
@@ -276,7 +286,7 @@ button{
 /* footer styles  start*/
 footer{
   text-align: center;
-  background-color: #791dcfb7;
+  background-color: var(--color3);
 }
 
 #links a {
