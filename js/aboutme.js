@@ -14,7 +14,7 @@ document.getElementById("languages").innerHTML = `
 document.getElementById("frameworks").innerHTML = `
     ${frameworks.map(function(item){
         return `
-        <span class="lang">${item}</span>`
+        <span class="lang" >${item}</span>`
     }).join('')}
 
 `
