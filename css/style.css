@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&family=Poppins:wght@300;600;900&display=swap');
 
 :root{
+  --color1: rgb(170, 75, 170);
   --color2: #120c14;
-  --color3: #393E46;
+  --color3: #a4b9e2;
   --color4: rgb(116, 150, 148);
   --mobiletext1: 50px;
   --mobiletext2: 25px;
@@ -34,7 +35,9 @@ body{
     transform: translateY(0px);
   }
 }
-
+::selection{
+  background-color: var(--color3);
+}
 #progress-bar{
   height: 10px;
   background-image: linear-gradient(to right,#001724,#4d0954,#c11ce6);
@@ -62,20 +65,26 @@ a{
   text-transform: uppercase;
 }
 .navbar a{
-  color: var(--color1);
+  color: var(--color3);
 }
-.navbar li:nth-child(1){
+.navbar li:nth-child(1) {
   position: fixed;
   top: 3px;
   left: 5px;
-  color: var(--color4);
   font-size: var(--desktext3);
   font-weight: bold;
 }
+.navbar li:nth-child(1) a{
+  color: var(--color4);
+}
+.navbar li:nth-child(1):hover{
+  border: none;
+  cursor: pointer;
+}
 /* welcome-section */
 #welcome{
-  /* background-image: url('../images/Endless-Constellation.svg'); */
-  background-image: url('../images/Subtle-Prism.svg');
+  background-image: url('../images/Endless-Constellation.svg');
+  /* background-image: url('../images/Subtle-Prism.svg'); */
   background-size: cover;
   /* border: 1px solid black; */
   color: var(--color4);
@@ -99,7 +108,7 @@ a{
 }
 #line2{
   /* color: #8771b1fa; */
-  color: #001724;
+  color: var(--color1);
 }
 #welcome-1{
   padding: 100px 50px;
@@ -113,17 +122,17 @@ a{
   font-size: var(--desktext3);
 }
 #social i{
-  color: grey;
+  color: var(--color1)
 }
 
 /* end of welcome-section  */
 
 /* about me starts  */
 #about-me {
-  /* background-color: var(--color2); */
+  background-color: var(--color2);
   padding: 20px;
   box-shadow: 5px 7px 7px 8px rgba(122, 96, 96, 0.363);
-  color: var(--color2);
+  color: var(--color3);
   margin: 30px 40px;
 }
 #about-me-div{
@@ -146,17 +155,18 @@ a{
   padding: 10px 15px 10px 15px;
   border-radius: 10px;
   margin: 10px 0px 10px 0px;
-  background-color: var(--color1);
+  background-color: var(--color2);
   font-weight: 600;
   border: 0px;
+  border: 1px solid var(--color1);
+
 }
 #resume a {
   color: var(--color3);
 }
 #resume:hover{
-  color: black;
-  background-color: var(--color2);
-  border: 1px solid var(--color1);
+  background-color: rgba(81, 142, 170, 0.438);
+  border: none;
 }
 
 #desc{
@@ -165,12 +175,7 @@ a{
   width: 70vw;
 }
 
-.lang{
-  border: 1px solid var(--color4);
-  padding: 5px 25px;
-  border-radius: 13px;
-  background-image: linear-gradient(to right,var(--primarycolor), white);
-}
+
 /* about me ends  */
 .nav-button{
   position: fixed;
@@ -221,7 +226,7 @@ a{
   border-radius:15px;
   text-align:center;  
   width: 100%;
-  height: 300px;
+  height: 250px;
  }
 
  .project-info{
@@ -275,18 +280,33 @@ button{
 }
 #skills{
   text-align: center;
+  background-color: var(--color2);
+  color: #cad5e6;
 }
+
 .skills-div{
   padding: 15px;
 }
 .skill-title{
   padding-bottom: 20px;
 }
+.lang{
+  border: 1px solid var(--color1);
+  padding: 5px 25px;
+  border-radius: 13px;
+  color: var(--color1);
+  background-image: linear-gradient(to right,var(--primarycolor), white);
+}
+.lang:hover{
+  color: #e3b8ec;
+}
 
 /* footer styles  start*/
 footer{
   text-align: center;
-  background-color: var(--color3);
+  background-color: var(--color2);
+  color: var(--color3);
+  /* background-image: linear-gradient(to right,#ff145f,#ffc42d); */
 }
 
 #links a {
@@ -302,7 +322,7 @@ footer{
 }
 
 #name{
-  color: #f7f9ff;
+  color: var(--color1);
 }
 
 #up-arrow{
