@@ -49,7 +49,9 @@ body{
   position: fixed;
   top: 0px;
 }
-
+#logom{
+  cursor: pointer;
+}
 a{
   text-decoration: none;
 }
@@ -78,20 +80,7 @@ a{
 .navbar a{
   color: var(--color3);
 }
-.navbar li:nth-child(1) {
-  position: fixed;
-  top: 3px;
-  left: 5px;
-  font-size: var(--desktext3);
-  font-weight: bold;
-}
-.navbar li:nth-child(1) a{
-  color: var(--color4);
-}
-.navbar li:nth-child(1):hover{
-  border: none;
-  cursor: pointer;
-}
+
 /* welcome-section */
 #welcome{
   background-image: url('../images/Endless-Constellation.svg');
@@ -228,6 +217,7 @@ a{
 
 .project-tile{
   background-color: var(--color2);
+  /* border: 1px solid var(--color2); */
   background-image: url(images/bgimg.jpg);
   background-blend-mode:overlay;
   background-size: cover;
@@ -236,17 +226,24 @@ a{
   border-radius:15px;
   text-align:center;  
   width: 100%;
+  position: relative;
   height: 250px;
  }
 
 .project-tile img{
   width:70%;
 }
-
-.project-link{
-  /* color:voilet; */
-  font-weight:bold;
+.tech-ul{
+  display: flex;
+  position: absolute;
+  bottom: 5px;
+  left: 0px;
 }
+.tech-ul li{
+  padding: 10px;
+  list-style: none;
+}
+
 button{
   cursor: pointer;
 }
@@ -267,7 +264,6 @@ button{
 /* hover effect on project-tile */
 .project-tile:hover{
   font-size: larger;
-  /* background-color: var(--primarycolor); */
 }
 
 #img-wave{
@@ -364,6 +360,7 @@ footer p{
     right: 10px;
     font-size: var(--mobiletext1);
     color: aliceblue;
+
   }
    .navbar{
     padding-top: 50px;
@@ -375,15 +372,25 @@ footer p{
     height: 100%;
     z-index: 2;
   }
+  .navbar {
+    animation: fromright 2s ease-out;
+  }
+  @keyframes fromright{
+    0%{
+      transform: translateX(220px);
+    }
+    100%{
+      transform: translateX(0px);
+    }
+  }
   .navbardisplay{
     display: none;
   }
-
+  .navbar li{
+    padding:20px;
+  }
   .navbar ul{
     list-style: none;
-  }
-  .navbar li{
-    padding: 30px;
   }
   #logo{
     display: none;
@@ -486,7 +493,15 @@ footer p{
 
 /* desktop screens  */
 @media screen and (min-width:1025px){
-
+ #logom{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: var(--mobiletext2);
+    font-weight: bold;
+    color: var(--color4);
+    z-index:3;
+  }
  #line1{
   font-size: var(--desktext2);
 }
@@ -521,7 +536,7 @@ footer p{
   display: block;
 }
 .navbar{
-  position: fixed;
+  position: absolute;
   top: 0px;
   /* margin: 15px; */
   left: 0px;
@@ -534,8 +549,8 @@ footer p{
 }
 .navbar ul{
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  align-items:center;
+  justify-content: flex-end;
   list-style: none;
   padding: 10px;
 }
@@ -544,6 +559,7 @@ footer p{
 }
 .navbar li:hover{
   border: 1px solid rgb(111, 54, 165);
+
 }
 #contact-1 p{
   font-size: var(--desktext3p2);
