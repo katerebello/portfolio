@@ -45,6 +45,7 @@ document.getElementById("projects").innerHTML = `
             <a target="_blank" href=${projects[0].link} class="project-link">
                 <div style="background-image: url(${project.image});color: red;" class="project-tile">
                     <div class="project-info">
+              <img class="project-img" src="/images/bg.jpg" alt="">
                         <p class="project-title">${project.title}</p>
                         <p class="project-desc">Laravel-php framework</p>
                         <ul class="tech-ul">
@@ -59,3 +60,15 @@ document.getElementById("projects").innerHTML = `
             `
          }).join('')}  
 `
+// document.getElementById("projects").innerHTML = `
+//     ${projects.map(function(project){
+//         return`
+//                 <div class="project-border">
+//                     <img class="project-img" src="images/bg.jpg" alt="">
+//                     <div>
+//                         <p>${project.title}</p>
+//                     </div>
+//                 </div>
+//         `
+//     }).join('')}
+// `

@@ -49,7 +49,7 @@ body{
   position: fixed;
   top: 0px;
 }
-#logom{
+#logo{
   cursor: pointer;
 }
 a{
@@ -120,12 +120,13 @@ a{
 }  
 
 #social li{
-  padding: 30px 20px 30px 12px;
+  padding: 10px;
   list-style: none;
   font-size: var(--desktext3);
 }
+
 #social i{
-  color: var(--color4)
+  color: white;
 }
 
 /* end of welcome-section  */
@@ -167,8 +168,7 @@ a{
   color: white;
 }
 #resume:hover{
-  background-color: rgba(81, 142, 170, 0.438);
-  border: none;
+  border:1px solid whitesmoke;
 }
 
 #desc{
@@ -337,6 +337,11 @@ footer{
 footer p{
   padding-bottom: 20px;
 }
+footer i,.uil-arrow-up{
+  font-size: 25px;
+} 
+
+/* footer ends  */
 
 @keyframes toright{
   0%{
@@ -353,14 +358,15 @@ footer p{
 
 /* mobile screens  */
 @media screen and (max-width:1025px){
+
   #navdisplay{
     position: fixed;
     z-index: 3;
     top: 0px;
+    bottom: 0px;
     right: 10px;
     font-size: var(--mobiletext1);
-    color: aliceblue;
-
+    color: #e9dbeb;
   }
    .navbar{
     padding-top: 50px;
@@ -393,15 +399,15 @@ footer p{
     list-style: none;
   }
   #logo{
-    display: none;
-  }
-  #logom{
     position: absolute;
     top: 15px;
     left: 15px;
     font-size: var(--mobiletext2);
     font-weight: bold;
     color: var(--color3);
+  }
+  #welcome-1{
+  padding: 70px 50px;
   }
   .titles{
     font-size: var(--mobiletext2);
@@ -435,10 +441,10 @@ footer p{
   font-size: var(--mobiletext2p2);
   }
   #social ul{
-  bottom: 300px;
-  justify-content: space-evenly;
-  display: flex;
-} 
+    padding: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  } 
   
   #projects{
     grid-template-columns:1fr;
@@ -493,7 +499,7 @@ footer p{
 
 /* desktop screens  */
 @media screen and (min-width:1025px){
- #logom{
+ #logo{
     position: absolute;
     top: 15px;
     left: 15px;
@@ -531,7 +537,7 @@ footer p{
 
 #social ul{
   position: absolute;
-  top: 150px;
+  top: 200px;
   right: 10px;
   display: block;
 }
@@ -573,6 +579,20 @@ footer p{
 
 
 }
-
+.project-border {
+  height: 40vh;
+  width: 30vw;
+  margin-top: 100px;
+  border: 5px solid black;
+}
+.project-img {
+  width: 85%;
+  height: 80%;
+  margin: auto;
+  display: block;
+  margin: auto;
+  position: relative;
+  bottom: 30%;
+}
 
 

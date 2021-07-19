@@ -7,33 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <title>Kate Rebello</title>
+    <style>
+        .project-border {
+            height: 40vh;
+            width: 30vw;
+            margin-top: 100px;
+            border: 5px solid black;
+        }
+
+        .project-img {
+            width: 85%;
+            height: 80%;
+            margin: auto;
+            display: block;
+            margin: auto;
+            position: relative;
+            bottom: 30%;
+        }
+    </style>
 </head>
 
 <body>
     <div id="main">
-        <a href="#" id="navdisplay"><i class="uil uil-bars" id="navicon"></i></a>
-        <!-- navbar begins  -->
-        <div id="logom">
-            < Kate />
+        <div id="nav-section">
+            <a href="#" id="navdisplay"><i class="uil uil-bars" id="navicon"></i></a>
+            <!-- navbar begins  -->
+            <div id="logo">
+                <a href="index.html">
+                    < Kate />
+                </a>
+            </div>
+            <div class="navbar navbardisplay">
+                <ul>
+                    <li><a href="pages/aboutme.html"><i class="uil uil-user"></i> About</a></li>
+                    <li><a href="/aboutme.html"><i class="uil uil-abacus"></i> Skills</a></li>
+                    <li><a href="#main-projects"><i class="uil uil-laptop"></i> Projects</a></li>
+                    <li><a href="pages/exp&edu.html"><i class="uil uil-laptop"></i>Education & Experience</a></li>
+                    <li><a href="#contact-me"><i class="uil uil-phone-volume"></i> Contact Me</a></li>
+                </ul>
+            </div>
+            <!-- navbar ends  -->
+            <div id="progress-bar"></div>
         </div>
-        <div class="navbar navbardisplay">
-            <ul>
-                <!-- <li id="logo">
-                    <a href="">
-                        < Kate />
-                    </a>
-                </li> -->
-                <li><a href="pages/aboutme.html"><i class="uil uil-user"></i> About</a></li>
-                <li><a href="/aboutme.html"><i class="uil uil-abacus"></i> Skills</a></li>
-                <li><a href="#main-projects"><i class="uil uil-laptop"></i> Projects</a></li>
-                <li><a href="pages/exp&edu.html"><i class="uil uil-laptop"></i>Education & Experience</a></li>
-                <li><a href="#contact-me"><i class="uil uil-phone-volume"></i> Contact Me</a></li>
-            </ul>
-        </div>
-        <!-- navbar ends  -->
-        <div id="progress-bar"></div>
+
 
         <!-- welcome begins  -->
         <div id="welcome">
@@ -51,11 +68,12 @@
 
                 <div id="social">
                     <ul id="social-links">
-                        <li><a target="_blank" href=""><i class="fa fa-lg fa-instagram"></i></a> </li>
+                        <li><a target="_blank" href=""><i class="uil uil-linkedin-alt"></i></a> </li>
+                        <li><a target="_blank" href=""><i class="uil uil-instagram"></i></a> </li>
                         <li><a id="profile-link" target="_blank" href="https://github.com/katerebello/">
-                                <i class="fa fa-lg fa-github"> </a></i>
+                                <i class="uil uil-github"> </a></i>
                         </li>
-                        <li><a href="mailto:katerebello27@gmail.com"><i class="fa fa-envelope"></i> </a></li>
+                        <li><a href="mailto:katerebello27@gmail.com"><i class="uil uil-envelope-alt"></i> </a></li>
                     </ul>
                 </div>
                 <!-- <img src="images/cooltext.png" alt=""> -->
@@ -119,6 +137,8 @@
             <div class="sub-titles">----- my work -----</div>
             <div id="projects">
             </div>
+
+
             <a href="pages/projects.html">
                 <button>More Projects <i class="uil uil-spinner-alt"></i></button>
             </a>
@@ -132,19 +152,21 @@
             <div class="sub-titles">--- get in touch ---</div>
             <div id="contact-1">
                 <div id="links">
-                    <a target="_blank" href=""><i class="fa fa-lg fa-instagram"></i></a>
+                    <a target="_blank" href=""><i class="uil uil-linkedin-alt"></i></a>
+                    <a target="_blank" href=""><i class="uil uil-instagram"></i></a>
                     <a id="profile-link" target="_blank" href="https://github.com/katerebello/"><i
-                            class="fa fa-lg  fa-github"></i></a>
+                            class="uil uil-github"></i></a>
 
-                    <a href="mailto:katerebello27@gmail.com"><i class="fa fa-envelope"></i></a>
+                    <a href="mailto:katerebello27@gmail.com"><i class="uil uil-envelope-alt"></i></a>
                 </div>
-                <p>Designed with &#128151; by<span id="name"> Kate Rebello </span>&copy; 2021</p>
+                <p>Made with &#128151; by<span id="name"> Kate Rebello </span>&copy; 2021</p>
             </div>
+            <a href="#main">
+                <button id="up-arrow"><i class="uil uil-arrow-up"></i></button>
+            </a>
             <!-- <img src="images/svg.png" alt=""> -->
         </footer>
-        <a href="#main">
-            <button id="up-arrow"><i class="fa fa-lg fa-arrow-up"></i></button>
-        </a>
+
         <!-- footer ends  -->
 
     </div>
