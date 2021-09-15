@@ -1,41 +1,57 @@
 const projects =[
     {
+        title: "Gender Classification Based on Name",
+        image: "../images/profile-pic.png",
+        link: "https://github.com/katerebello/gender-predictor-flutter",
+        technologies: ["PYTHON","MACHINE LEARNING"],
+    },
+     {
+        title: "Facial Image Classification",
+        image: "../images/profile-pic.png",
+        link: "https://github.com/katerebello/gender-predictor-flutter",
+        technologies: ["DART","FLUTTER","API"],
+    },
+     {
+        title: "Electronic store",
+        image: "../images/bgimg.jpg",
+        link: "https://github.com/katerebello/electronic-store-laravel",
+        technologies: ["PHP","LARAVEL","BLADE"],
+    },
+     {
         title: "Instgram clone",
         image: "",
-        link: "https://github.com/katerebello/laravel_project",
-        technologies: [""],
-    },
-    {
-        title: "Electronic store",
-        image: "",
-        link: "",
-        technologies: [""],
+        link: "https://github.com/katerebello/Instagram_clone_laravel",
+        technologies: ["PHP","BLADE"],
     },
     {
         title: "Music application",
-        image: "images/capture.jpg",
-        link: "",
-        technologies: [""],
+        image: "../images/profile-pic.png",
+        link: "https://github.com/katerebello/python_project_sem4",
+        technologies: ["PYTHON","DJANGO",],
     },
+   
     
-
 ];
 
 document.getElementById("projects").innerHTML = `
         ${projects.map(function(project){
             return `
-            <a target="_blank" href=${projects[0].link} class="project-link">
                 <div style="background-image: url(${project.image});color: red;" class="project-tile">
                     <div class="project-info">
                         <p class="project-title">${project.title}</p>
-                        <p class="project-desc">Laravel-php framework</p>
-                    </div>
+                        <ul class="tech-ul">
+                            ${(project.technologies).map(function(tech){
+                                return `<li>${tech}</li>`
+                            }).join('')}
+                        </ul>
+                    </div> 
                     <div class="project-icons">
-                        <button>Live Demo<i class="uil uil-external-link-alt"></i></button>
-                        <i class="uil uil-github "></i>
+                        <a target="_blank" href=${projects[0].link} class="project-link">
+                            <i class="uil uil-github "></i>
+                        </a>
+                    </a>
                     </div>
                 </div>
-            </a>
             `
         }).join('')}  
 `
@@ -48,24 +64,6 @@ window.addEventListener("scroll",()=>{
 });
 
 
-// navbar toogle  on mobile screens starts
-const navbutton = document.querySelector("#navdisplay");
-const navbar = document.querySelector(".navbar");
-const navicon = document.querySelector("#navicon");
-navbutton.addEventListener("click",function(){
-    navbar.classList.toggle("navbardisplay");
-    // navicon.toggleClass("uil-bars uil-user");
-    console.log(navicon.classList.contains('uil-user'));
-    if(navicon.classList.contains('uil-bars')){
-        navicon.classList.remove('uil-bars');
-        navicon.classList.add('uil-times');
-    }
-    else if(navicon.classList.contains('uil-times')){
-        navicon.classList.remove('uil-times');
-        navicon.classList.add('uil-bars');
-    }
-});
-// navbar toogle ends
 
 
 // greet in the welcome 

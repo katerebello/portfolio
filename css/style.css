@@ -66,6 +66,10 @@ a{
 #main-projects div{
   color: rgb(221, 205, 205);
 }
+.project-title{
+  padding: 20px;
+  font-weight: bolder;
+}
 
 .sub-titles{
   text-align: center;
@@ -189,7 +193,7 @@ a{
 
 /* projects section starts  */
 #main-projects{
-  padding: 20px;
+  padding: 10px;
   color: aliceblue;
   /* background-image: url('../images/Flat-Mountains.svg'); */
   background-repeat: no-repeat;
@@ -198,21 +202,19 @@ a{
 }
 .project-icons{
   font-size:var(--desktext2p2);
-  color: var(--color1);
-  position: relative;
+  position: absolute;
+  bottom: 0px;
   padding: 50px;
 }
 #projects{
   display:grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 30px;
-  /* grid-template-rows:1fr 1fr; */
   grid-row-gap:40px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 20px 30px 20px 0px;
-  /* background-color: #4d0954; */
+  padding: 20px 0px 20px 0px;
 }
 
 .project-tile{

@@ -7,31 +7,34 @@ const projects =[
     },
     {
         title: "Electronic store",
-        image: "",
+        image: "../images/bgimg.jpg",
         link: "",
         technologies: ["PHP","LARAVEL","BLADE"],
     },
     {
         title: "Music application",
-        image: "images/capture.jpg",
+        image: "../images/profile-pic.png",
         link: "",
         technologies: ["PYTHON","DJANGO",],
     },
     {
-        title: "Gender predictor",
-        image: "",
+        title: "Gender classification based on age and gender",
+        image: "../images/bgimg.jpg",
+
         link: "",
-        technologies: ["PYTHON"],
+        technologies: ["PYTHON","ML"],
     },
     {
-        title: "Electronic store",
-        image: "",
+        title: "Gender prediction based on name",
+        image: "../images/bgimg.jpg",
+        
         link: "",
-        technologies: [""],
+        technologies: ["Flutter","DART","API"],
     },
      {
         title: "Gender predictor",
-        image: "",
+        image: "../images/bgimg.jpg",
+        
         link: "",
         technologies: [""],
     },
@@ -40,26 +43,30 @@ const projects =[
 ];
 
 document.getElementById("projects").innerHTML = `
-         ${projects.map(function(project){
+        ${projects.map(function(project){
             return `
-            <a target="_blank" href=${projects[0].link} class="project-link">
                 <div style="background-image: url(${project.image});color: red;" class="project-tile">
                     <div class="project-info">
-              <img class="project-img" src="/images/bg.jpg" alt="">
                         <p class="project-title">${project.title}</p>
-                        <p class="project-desc">Laravel-php framework</p>
                         <ul class="tech-ul">
                             ${(project.technologies).map(function(tech){
                                 return `<li>${tech}</li>`
                             }).join('')}
                         </ul>
+                    </div> 
+                    <div class="project-icons">
+                        <a target="_blank" href=${projects[0].link} class="project-link">
+                            <i class="uil uil-github "></i>
+                        </a>
+                    </a>
                     </div>
-                    <i class="uil uil-github"></i>
                 </div>
-            </a>
             `
-         }).join('')}  
+        }).join('')}  
 `
+
+
+
 // document.getElementById("projects").innerHTML = `
 //     ${projects.map(function(project){
 //         return`
