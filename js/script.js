@@ -1,16 +1,12 @@
 const projects =[
+     
     {
         title: "Gender Classification Based on Name",
         image: "../images/profile-pic.png",
         link: "https://github.com/katerebello/gender-predictor-flutter",
-        technologies: ["PYTHON","MACHINE LEARNING"],
+        technologies:["DART","FLUTTER","API"],
     },
-     {
-        title: "Facial Image Classification",
-        image: "../images/profile-pic.png",
-        link: "https://github.com/katerebello/gender-predictor-flutter",
-        technologies: ["DART","FLUTTER","API"],
-    },
+    
      {
         title: "Electronic store",
         image: "../images/bgimg.jpg",
@@ -22,6 +18,12 @@ const projects =[
         image: "",
         link: "https://github.com/katerebello/Instagram_clone_laravel",
         technologies: ["PHP","BLADE"],
+    },
+    {
+        title: "Facial Image Classification",
+        image: "../images/profile-pic.png",
+        link: "#",
+        technologies: ["PYTHON","MACHINE LEARNING"], 
     },
     {
         title: "Music application",
@@ -36,7 +38,7 @@ const projects =[
 document.getElementById("projects").innerHTML = `
         ${projects.map(function(project){
             return `
-                <div style="background-image: url(${project.image});color: red;" class="project-tile">
+                <div style="color: red;" class="project-tile">
                     <div class="project-info">
                         <p class="project-title">${project.title}</p>
                         <ul class="tech-ul">
@@ -46,7 +48,7 @@ document.getElementById("projects").innerHTML = `
                         </ul>
                     </div> 
                     <div class="project-icons">
-                        <a target="_blank" href=${projects[0].link} class="project-link">
+                        <a target="_blank" href=${project.link} class="project-link">
                             <i class="uil uil-github "></i>
                         </a>
                     </a>
