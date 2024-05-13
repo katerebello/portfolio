@@ -1,5 +1,11 @@
 const projects =[
     {
+        title: "Cloud Based Video Hosting Platform",
+        image: "",
+        link: "https://github.com/csk18-22/Cloud-based-video-hosting-platform",
+        technologies: ["PHP","LARAVEL"],
+    },
+    {
         title: "Instgram clone",
         image: "",
         link: "https://github.com/katerebello/laravel_project",
