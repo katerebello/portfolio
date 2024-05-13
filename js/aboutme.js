@@ -1,7 +1,7 @@
 const languages =["Python","PHP","Java","C++","C","Javascript","Dart","Markdown"];
 const frameworks = ["Django","Laravel","Flutter","Bootstrap"];
 const libraries = ["Jquery"];
-const technologies = ["Github","Git"];
+const technologies = ["Snowflake","Github","Git"];
 
 document.getElementById("languages").innerHTML = `
     ${languages.map(function(item){
